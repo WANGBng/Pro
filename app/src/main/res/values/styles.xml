@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--字体
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_10"-->
+    <style name="my_page_address_font10" parent="AppTheme">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+    <!--字体
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_14"-->
+    <style name="my_page_address_font14" parent="AppTheme">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+    <!--字体
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_14"-->
+    <style name="my_page_addrs_font14" parent="AppTheme">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+    <!--字体
+        android:textColor="#ff0000"
+        android:textSize="@dimen/sp_14"-->
+    <style name="my_page_addres_font14" parent="AppTheme">
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+    <!--
+    android:textColor="#666666"
+    android:textSize="@dimen/sp_12"
+    -->
+    <style name="my_page_address_font12" parent="AppTheme">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+    <!--
+    android:textColor="#999999"
+    android:textSize="@dimen/sp_12"
+    -->
+    <style name="my_page_addres_font12" parent="AppTheme">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+    <!--
+    android:textColor="#ff0606"
+    android:textSize="@dimen/sp_16"
+    -->
+    <style name="my_page_addre_font_red16" parent="AppTheme">
+        <item name="android:textColor">#ff0606</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+    <!--
+    android:textColor="#666666"
+    android:textSize="@dimen/sp_16"
+    -->
+    <style name="my_page_address_font_gray16" parent="AppTheme">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+    <style name="my_page_addres_font_white16" parent="AppTheme">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+    <style name="my_page_address_font20" parent="AppTheme">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+    <!--
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_20"
+    android:layout_marginTop="@dimen/dp_20"
+    -->
+    <style name="my_page_address_lay" parent="AppTheme">
+        <item name="android:layout_marginLeft">@dimen/dp_20</item>
+        <item name="android:layout_marginRight">@dimen/dp_20</item>
+        <item name="android:layout_marginTop">@dimen/dp_20</item>
+    </style>
+
+    <style name="text2" parent="AppTheme">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_10</item>
+    </style>
+</resources>

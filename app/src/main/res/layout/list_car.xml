@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_110"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/fragment_list_recycler"
+        android:orientation="horizontal"
+        android:shadowColor="#81111111"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="30">
+        <!--全部订单，点击事件为Shop_Car_List-->
+        <RelativeLayout
+            android:id="@+id/List_All"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/all_listImage"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/common_icon_all_list_n" />
+
+            <TextView
+                android:id="@+id/all_listText"
+                style="@style/my_page_address_font12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_listImage"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="全部订单" />
+        </RelativeLayout>
+        <!--待付款,点击事件Shop_Car_Pay-->
+        <RelativeLayout
+            android:id="@+id/List_Pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/payImage"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/common_icon_pay_n" />
+
+            <TextView
+                android:id="@+id/payText"
+                style="@style/my_page_address_font12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/payImage"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_10"
+
+                android:text="待付款" />
+        </RelativeLayout>
+        <!--待收货，点击事件为Shop_Car_Receive-->
+        <RelativeLayout
+            android:id="@+id/List_Receive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/receiveImage"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/common_icon_receive_n" />
+
+            <TextView
+                android:id="@+id/receiveText"
+                style="@style/my_page_address_font12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receiveImage"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="待收货" />
+        </RelativeLayout>
+        <!--待评价，点击事件Shop_Car_Comment-->
+        <RelativeLayout
+            android:id="@+id/List_Comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/commentImage"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/commom_icon_comment_n" />
+
+            <TextView
+                android:id="@+id/commentText"
+                style="@style/my_page_address_font12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commentImage"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="待评价" />
+        </RelativeLayout>
+        <!--已完成，点击事件-->
+        <RelativeLayout
+            android:id="@+id/List_Finish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/finishImage"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/common_icon_finish_n" />
+
+            <TextView
+                android:id="@+id/finishText"
+                style="@style/my_page_address_font12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/finishImage"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="已完成" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/fragement_list_recycler">
+        <!--待付款-->
+        <include
+            layout="@layout/list_pay"
+            android:visibility="invisible" />
+        <!--待评价-->
+        <!--全部订单，默认展示-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/List_AllOrder_Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_22">
+
+        </android.support.v7.widget.RecyclerView>
+        <!-- <include layout="@layout/list_allorder"
+             android:visibility="visible"
+             />-->
+    </RelativeLayout>
+
+</RelativeLayout>

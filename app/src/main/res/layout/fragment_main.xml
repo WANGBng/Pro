@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/my_bitmap_bag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_142"
+        android:background="@drawable/fragment_main">
+
+
+        <TextView
+            android:id="@+id/Main_Name"
+            style="@style/my_page_address_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_60" />
+        <!--TODO：个人资料-->
+        <ImageView
+            android:id="@+id/Main_Profile_Image"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_below="@id/Main_Name"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_70"
+            android:background="@mipmap/my_icon_information_n" />
+
+        <TextView
+            android:id="@+id/Main_Profile_Text"
+            style="@style/my_page_address_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Main_Name"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_70"
+            android:layout_toRightOf="@id/Main_Profile_Image"
+            android:background="@null"
+            android:text="个人资料" />
+
+        <View
+            android:id="@+id/Main_Profile_View"
+            android:layout_width="@dimen/dp_267"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/Main_Profile_Text"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_toRightOf="@id/Main_Profile_Image"
+            android:background="@drawable/fragment_main_view" />
+        <!--我的圈子-->
+        <ImageView
+            android:id="@+id/Main_Find_Image"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_below="@id/Main_Profile_Image"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@mipmap/my_icon_circle_n" />
+
+        <TextView
+            android:id="@+id/Main_Find_Text"
+            style="@style/my_page_address_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Main_Profile_View"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_toRightOf="@id/Main_Find_Image"
+            android:text="我的圈子" />
+
+        <View
+            android:id="@+id/Main_Find_View"
+            android:layout_width="@dimen/dp_267"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/Main_Find_Text"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_toRightOf="@id/Main_Find_Image"
+            android:background="@drawable/fragment_main_view" />
+        <!--TODO：我的足迹-->
+        <ImageView
+            android:id="@+id/Main_Foot_Image"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_below="@id/Main_Find_Image"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@mipmap/my_icon_foot_n" />
+
+        <TextView
+            android:id="@+id/Main_Foot_Text"
+            style="@style/my_page_address_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Main_Find_Image"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_toRightOf="@id/Main_Foot_Image"
+            android:text="我的足迹" />
+
+        <View
+            android:id="@+id/Main_Foot_View"
+            android:layout_width="@dimen/dp_267"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/Main_Foot_Text"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_toRightOf="@id/Main_Foot_Image"
+            android:background="@drawable/fragment_main_view" />
+        <!--我的钱包-->
+        <ImageView
+            android:id="@+id/Main_Wallet_Image"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_below="@id/Main_Foot_Image"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@mipmap/my_icon_wallet_n" />
+
+        <TextView
+            android:id="@+id/Main_Wallet_Text"
+            style="@style/my_page_address_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Main_Foot_Image"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_toRightOf="@id/Main_Wallet_Image"
+            android:text="我的钱包" />
+
+        <View
+            android:id="@+id/Main_Wallet_View"
+            android:layout_width="@dimen/dp_267"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/Main_Wallet_Text"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_toRightOf="@id/Main_Wallet_Image"
+            android:background="@drawable/fragment_main_view" />
+        <!--TODO:我的收货地址-->
+        <ImageView
+            android:id="@+id/Main_Address_Imagee"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_below="@id/Main_Wallet_View"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@mipmap/my_icon_address_n" />
+
+        <TextView
+            android:id="@+id/Main_Address_Text"
+            style="@style/my_page_address_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Main_Wallet_View"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_toRightOf="@id/Main_Address_Imagee"
+            android:text="我的收货地址" />
+
+        <View
+            android:id="@+id/Main_Address_View"
+            android:layout_width="@dimen/dp_267"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/Main_Address_Text"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_toRightOf="@id/Main_Address_Imagee"
+            android:background="@drawable/fragment_main_view" />
+
+    </RelativeLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/Main_Head_Image"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_104"
+        fresco:placeholderImage="@mipmap/my_bitmap_bag"
+        fresco:roundedCornerRadius="@dimen/dp_50"
+
+        />
+</RelativeLayout>
+

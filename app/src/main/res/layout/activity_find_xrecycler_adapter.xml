@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/activity_find_xrecycler_adapter"
+    android:shadowColor="@color/Login"
+    android:shadowDx="4"
+    android:shadowDy="4"
+    android:shadowRadius="1">
+
+    <TextView
+        android:id="@+id/FindAdapter_Content"
+        style="@style/my_page_address_font12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20" />
+
+    <ImageView
+        android:id="@+id/FindAdapter_Image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_140"
+        android:layout_below="@id/FindAdapter_Content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/FindAdapter_Time"
+        style="@style/my_page_address_font10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/FindAdapter_Image"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20" />
+
+    <ImageView
+        android:id="@+id/FindAdapter_Thumbs"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_below="@id/FindAdapter_Image"
+        android:layout_toLeftOf="@id/FindAdapter_ThumbsNum"
+        android:background="@mipmap/common_btn_prise_n" />
+
+    <TextView
+        android:id="@+id/FindAdapter_ThumbsNum"
+        style="@style/my_page_address_font12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/FindAdapter_Image"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10" />
+</RelativeLayout>

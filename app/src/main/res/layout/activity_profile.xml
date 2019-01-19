@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.wang.bwm.activity.ProfileActivity">
+
+    <TextView
+        style="@style/my_page_address_font_gray16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="我的资料" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_138"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/activity_profile"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/te"
+                style="@style/my_page_address_font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我的头像" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/Profile_head_Image"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@mipmap/bitmap_my_copy" />
+
+            <View
+                android:layout_width="@dimen/dp_272"
+                android:layout_height="@dimen/dp_2"
+                android:layout_alignParentBottom="true"
+                android:background="#f2f2f2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tee"
+                style="@style/my_page_address_font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我的昵称" />
+
+            <TextView
+                android:id="@+id/Profile_Name"
+                style="@style/my_page_addres_font12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:editable="true"
+                android:text="我是狂吃不胖的小姐姐" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/dp_272"
+                android:layout_height="@dimen/dp_2"
+                android:layout_alignParentBottom="true"
+                android:background="#f2f2f2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/m_pass"
+                style="@style/my_page_address_font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我的密码" />
+
+            <TextView
+                android:id="@+id/Profile_Password"
+                style="@style/my_page_addres_font12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:text="123456" />
+
+            <View
+                android:layout_width="@dimen/dp_272"
+                android:layout_height="@dimen/dp_2"
+                android:layout_alignParentBottom="true"
+                android:background="#f2f2f2" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/back_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:text="退出登陆"
+        />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_151"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_22"
+    android:background="@drawable/home_list"
+    android:orientation="vertical"
+    android:shadowColor="#999999"
+    >
+
+    <ImageView
+        android:id="@+id/Lift_Image"
+        android:layout_width="@dimen/dp_131"
+        android:layout_height="@dimen/dp_102"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/Lift_Title"
+        style="@style/my_page_address_font12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_2"
+        android:maxLength="8"
+        android:text="哇哇哇哇哇哇哇我" />
+
+    <TextView
+        android:id="@+id/Lift_Price"
+        style="@style/my_page_addres_font14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_10" />
+</LinearLayout>

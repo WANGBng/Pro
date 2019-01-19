@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/Shop_Car_CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_40" />
+
+    <RelativeLayout
+        android:id="@+id/Shop_Car_List"
+        android:layout_width="@dimen/dp_292"
+        android:layout_height="@dimen/dp_97"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_toRightOf="@id/Shop_Car_CheckBox"
+        android:background="@drawable/shop_car_list"
+        android:shadowDx="4"
+        android:shadowDy="4">
+
+        <ImageView
+            android:id="@+id/Shop_Car_Image"
+            android:layout_width="@dimen/dp_81"
+            android:layout_height="@dimen/dp_81"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_8" />
+
+        <TextView
+            android:id="@+id/Shop_Car_Name"
+            style="@style/my_page_address_font12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_toRightOf="@id/Shop_Car_Image"
+            android:ellipsize="end"
+            android:lines="2" />
+
+        <TextView
+            android:id="@+id/Shop_Car_Price"
+            style="@style/my_page_addres_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_toRightOf="@id/Shop_Car_Image" />
+        <!--Shop_Car_Add_Reduce_View-->
+        <com.bwie.wang.bwm.Until.Shop_Car_Add_Reduce_View
+            android:id="@+id/Shop_Car_AddReduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_10" />
+    </RelativeLayout>
+
+</RelativeLayout>

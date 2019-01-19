@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/jian_car"
+        style="@style/my_page_address_font14"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_18"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/add_car"
+        style="@style/my_page_address_font14"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_18"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/edit_shop_car"
+        android:gravity="center_horizontal"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/edit_shop_car"
+        style="@style/my_page_address_font12"
+        android:layout_width="@dimen/dp_31"
+        android:layout_height="@dimen/dp_18"
+        android:layout_toRightOf="@id/jian_car"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="1" />
+</RelativeLayout>

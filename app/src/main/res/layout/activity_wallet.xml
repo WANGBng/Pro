@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.wang.bwm.activity.WalletActivity">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_156"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_41"
+        android:background="@mipmap/group"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_28"
+            android:text="余额"
+            android:textColor="#353535"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/my_waller_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="100.00"
+            android:textColor="#353535"
+            android:textSize="@dimen/sp_36" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/my_page_address_font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消费金额" />
+
+            <TextView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:layout_marginRight="@dimen/dp_40"
+                android:gravity="center"
+                android:text="|"
+                android:textColor="#666666" />
+
+            <TextView
+                style="@style/my_page_address_font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消费时间" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:layout_marginRight="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="#FFEDEDED" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/my_wallet_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_35"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.wang.bwm.activity.MyAddAdressActivity">
+
+    <TextView
+        android:id="@+id/add"
+        style="@style/my_page_address_font_gray16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="新增收货地址" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/activity_add_address_add">
+        <!--收件人-->
+        <TextView
+            android:id="@+id/shou"
+            style="@style/my_page_address_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="收件人:" />
+
+        <EditText
+            android:id="@+id/Addressee"
+            style="@style/my_page_address_font14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_toRightOf="@id/shou"
+            android:background="@null"
+            android:inputType="textPersonName" />
+
+        <View
+            android:id="@+id/shouview"
+            android:layout_width="@dimen/dp_272"
+            android:layout_height="1dp"
+            android:layout_below="@id/shou"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#f2f2f2" />
+        <!--手机号码-->
+        <TextView
+            android:id="@+id/phone"
+            style="@style/my_page_address_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shouview"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="手机号码:" />
+
+        <EditText
+            android:id="@+id/AddPhone"
+            style="@style/my_page_address_font14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shouview"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_toRightOf="@id/phone"
+            android:background="@null" />
+
+        <View
+            android:id="@+id/phoneView"
+            android:layout_width="@dimen/dp_272"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/phone"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#f2f2f2" />
+        <!--所在地区-->
+        <TextView
+            android:id="@+id/suo"
+            style="@style/my_page_address_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneView"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="所在地区：" />
+
+        <EditText
+            android:id="@+id/AddRegion"
+            style="@style/my_page_address_font14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/suo"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_toLeftOf="@id/ChoseRegion"
+            android:layout_toRightOf="@id/suo"
+            android:background="@null"
+            android:ellipsize="end" />
+
+        <ImageView
+            android:id="@+id/ChoseRegion"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignBottom="@id/AddRegion"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@mipmap/common_btn_next_n" />
+
+        <View
+            android:id="@+id/suoView"
+            android:layout_width="@dimen/dp_270"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/AddRegion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#f2f2f2" />
+        <!--详细地址-->
+        <TextView
+            android:id="@+id/xiang"
+            style="@style/my_page_address_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suoView"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="详细地址：" />
+
+        <EditText
+            android:id="@+id/AddDetailedAddress"
+            style="@style/my_page_address_font14"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_36"
+            android:layout_below="@id/suoView"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@id/xiang"
+            android:background="@null"
+            android:inputType="text" />
+
+        <View
+            android:id="@+id/xiangView"
+            android:layout_width="@dimen/dp_270"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/AddDetailedAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#f2f2f2" />
+        <!--邮政编码-->
+        <TextView
+            android:id="@+id/you"
+            style="@style/my_page_address_font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiangView"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="邮政编码：" />
+
+        <EditText
+            android:id="@+id/AddItemCode"
+            style="@style/my_page_address_font14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiangView"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@id/you"
+            android:background="@null"
+            android:inputType="number" />
+
+        <View
+            android:id="@+id/youView"
+            android:layout_width="@dimen/dp_270"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/you"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#f2f2f2" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Add_Save_use"
+        android:layout_width="@dimen/dp_116"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@drawable/add_address_button"
+        android:text="保存并使用"
+        android:textColor="@color/Login" />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_97">
+
+    <ImageView
+        android:id="@+id/CommentSecondImage"
+        android:layout_width="@dimen/dp_81"
+        android:layout_height="@dimen/dp_81"
+        android:layout_margin="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/CommentSecondName"
+        style="@style/my_page_address_font12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@id/CommentSecondImage"
+        android:ellipsize="end"
+        android:lines="2" />
+
+    <TextView
+        android:id="@+id/CommentSecondPrice"
+        style="@style/my_page_addres_font14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_toRightOf="@id/CommentSecondImage" />
+
+    <TextView
+        android:id="@+id/CommentSecondGoComment"
+        style="@style/my_page_addrs_font14"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_26"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/commentsecondgocomment"
+        android:gravity="center"
+        android:text="去评价" />
+</RelativeLayout>

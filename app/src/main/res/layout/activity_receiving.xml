@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.wang.bwm.activity.ReceivingActivity">
+
+    <RelativeLayout
+        android:id="@+id/Add_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_98"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_40">
+
+        <Button
+            android:id="@+id/Receiving_Add_Address"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/receiving_add_address"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:text="暂无收货地址 点击添加"
+            android:textColor="#ff5f71"
+            android:textSize="@dimen/sp_12"
+
+            />
+    </RelativeLayout>
+    <!--商品列表-->
+    <RelativeLayout
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Add_Address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/receiving_add_address">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Receiving_Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20" />
+    </RelativeLayout>
+
+    <!--地址列表-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Receiving_Address"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_98"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/add_address_recycler"
+        android:visibility="invisible" />
+    <!--点击得到其他地址-->
+    <ImageView
+        android:id="@+id/Receiving_Other"
+        android:layout_width="@dimen/dp_12"
+        android:layout_height="@dimen/dp_12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_116"
+        android:background="@mipmap/common_btn_drop_down_n"
+        android:visibility="invisible" />
+    <!--其他的地址-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Receiving_Address_Other"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_225"
+        android:layout_below="@id/Receiving_Address"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="@drawable/receiving_address_other"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:background="#fcf">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_242"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/my_page_address_font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共" />
+
+            <TextView
+                android:id="@+id/Receiving_AllNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#f00"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                style="@style/my_page_address_font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="件商品，需付款" />
+
+            <TextView
+                android:id="@+id/Receiving_AllPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="#ff0606"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                style="@style/my_page_address_font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Receiving"
+            style="@style/my_page_addres_font_white16"
+            android:layout_width="@dimen/dp_118"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ff5e70"
+            android:text="提交订单" />
+    </RelativeLayout>
+</RelativeLayout>
